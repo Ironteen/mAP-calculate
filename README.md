@@ -28,7 +28,7 @@ $$
 
 ​	   这四个概念之前是用在了信息检索领域，放到目标检测的性能评价这块需要稍稍修正一下理解，在目标检测领域没有对负样本进行标定，因为除了正确的检测框，其他地方可以画出几乎无数的不包含任何目标的负样本框，所以说TP，FP和FN是可以计算得到的。
 
-![precision-recall](.\imgs\precision-recall.png)
+![precision-recall](./imgs/precision-recall.png)
 
 #### Precision和Recall
 
