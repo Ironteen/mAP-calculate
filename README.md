@@ -204,7 +204,7 @@ i_list= [1, 2, 3, 4, 5, 6, 8, 9]
 
 此时可以画一下P-R曲线：
 
-![AP](./imgs/P-R curve.png)
+![AP](./imgs/P-R\ curve.png)
 
 最后计算这个面积：
 
