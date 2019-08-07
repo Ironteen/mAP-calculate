@@ -14,7 +14,7 @@ S_2 = (xmax_2-xmin_2+1)\times(ymax_2-ymin_2+1)\\
 Intersec = (xmax_2-xmin_1+1)\times(ymax_2-ymin_2+1)\\
 IoU = \frac{Intersec}{S_1+S_2-Intersec}
 $$
-![cat](.\imgs\dog.png)
+![cat](./imgs/dog.png)
 
 ​	   通常而言，IoU的值越高，认为检测的结果越好。当检测结果和真实标签完全对上时，IoU就是1，反之当检测结果和真实标签没有一点交集时，IoU为0，其他情况下IoU的计算就是两个框的交并比。通常情况下设定当IoU超过一个给定的阈值时， 检测为正确，在Pascal VOC竞赛中，这个值是0.5。
 
