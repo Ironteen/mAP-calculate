@@ -179,7 +179,7 @@ recall = [0，0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.75, 0.875，1]
 
 ```
 for i in range(len(mpre)-2, -1, -1):
-        mpre[i] = max(mpre[i], mpre[i+1])
+    mpre[i] = max(mpre[i], mpre[i+1])
 ```
 
 让precision的列表单调递减，得到
@@ -192,8 +192,8 @@ mprec = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.875，0.875, 0]
 
 ```
 for i in range(1, len(mrec)):
-        if mrec[i] != mrec[i-1]:
-            i_list.append(i)
+    if mrec[i] != mrec[i-1]:
+        i_list.append(i)
 ```
 
 记录recall列表中的突变点的索引
@@ -210,8 +210,8 @@ i_list= [1, 2, 3, 4, 5, 6, 8, 9]
 
 ```
 ap = 0.0
-    for i in i_list:
-        ap += ((mrec[i]-mrec[i-1])*mpre[i])
+for i in i_list:
+    ap += ((mrec[i]-mrec[i-1])*mpre[i])
 ```
 
 ### 参考文献
