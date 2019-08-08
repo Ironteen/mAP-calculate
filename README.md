@@ -8,12 +8,12 @@
 
 ​	   IoU简单来说就是交并比，用来衡量单个目标检测结果的性能。如下图所示，假定该图中的检测小狗的真实标签是红框，由左上角的点(xmin_1，ymin_1) 和右下角的点(xmax_1, ymax_1)来表示，检测的结果是白框，由左上角的点 (xmin_2，ymin_2) 和右下角的点 (xmax_2, ymax_2)表示，浅绿色的区域是红白框相交的区域，那么IoU可以通过如下的方式进行计算：
 
-$$
+$
 S_1 = (xmax_1-xmin_1+1)\times(ymax_1-ymin_1+1) \\
 S_2 = (xmax_2-xmin_2+1)\times(ymax_2-ymin_2+1)\\
 Intersec = (xmax_2-xmin_1+1)\times(ymax_2-ymin_2+1)\\
 IoU = \frac{Intersec}{S_1+S_2-Intersec}
-$$
+$
 
 ![cat](./imgs/dog.png)
 
